@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Form Test</title>
-    </head>
-    <body>
-        <form action="https://httpbin.org/get">
-            <label for="name">Name : </label>
-            <input type="text" id="name" name="name">
-            <button onclick="submit">Submit</button>
-        </form>
-    </body>
+
+<head>
+    <title>Form Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <cover>
+        <img src="/mountain1.jpg" width="1400" alt="people treking on mountain">
+    </cover>
+
+    <header>
+        <h1>Face the Great!</h1>
+    </header>
+
+    <nav>
+        <p>Logo</p>
+        <ul class="navlinks">
+            <li><a href="#" target="_blank">Home</a></li>
+            <li>Gallery</li>
+            <li>About Us</li>
+            <li><a href="#" target="_blank">Google</a></li>
+        </ul>
+    </nav>
+
+    <div class="text-section">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero saepe quas accusantium ullam optio ea odit voluptatibus asperiores sunt sapiente alias vitae molestiae mollitia exercitationem laboriosam distinctio, numquam hic aperiam.</p>
+    </div>
+
+    <form action="https://httpbin.org/post" method="POST">
+        <h2>Contact Us</h2>
+        <br>
+        <label for="fname">Name : </label>
+        <br>
+        <input 
+            autofocus maxlength="16" 
+            minlength="6" 
+            type="text" id="fname" name="fname" 
+            placeholder="6-16 Character"
+            required>
+        <br>
+        <label for="email">Email : </label>
+        <br>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="comment">Comment : </label>
+        <br>
+        <textarea id="comment" name="comment"></textarea>
+        <br>
+        <button onclick="submit">Submit</button>
+    </form>
+</body>
+
 </html>
+
+<!--https://httpbin.org/get GET แสดงข้อมูลบนแถบ url-->
+<!--https://httpbin.org/post POST ไม่แสดงบนแถบ url-->
